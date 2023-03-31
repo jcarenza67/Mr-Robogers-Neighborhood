@@ -15,7 +15,7 @@ function beepBoop(num) {
       count.push(i);
     }
   }
-  return count.join("");
+  return count;
 }
 
 window.addEventListener("load", function() {
