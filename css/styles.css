@@ -2,12 +2,35 @@ body {
   background-image: url("/images/mr-rogers.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  background-blend-mode: multiply;
 }
 
 .header {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   color: rgb(0, 0, 0);
   padding-top: 25px;
+  font-family: 'Bungee Spice', cursive;
+  height: 90px;
+  font-size: 100px;
+}
+
+.form-group {
+  text-align: center;
+  padding-top: 140px;
+}
+
+.result, #beMine{
+  background-color: alceblue;
+  text-align: center;
+}
+
+#beMine {
+  font-family: 'Delicious Handrawn', cursive;
+  font-size: 70px;
+  color: rgb(255, 230, 0);
+}
+
+.result {
+  font-size: 40px;
+  color: rgb(12, 12, 12);
 }
