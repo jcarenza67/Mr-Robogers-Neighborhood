@@ -6,6 +6,8 @@ function beepBoop(num) {
     result = "Won't you be my neighbor?";
   } else if (strNum.includes("2")) {
     result = "Boop!";
+  } else if (strNum.includes("1")) {
+    result = "Beep!";
   } else {
     result = strNum;
   }

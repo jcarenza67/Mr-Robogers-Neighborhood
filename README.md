@@ -53,7 +53,11 @@ _A web application that takes a number from the user and returns a list of value
 
     Test: "It will output "Boop" as long as there is a 2 in the number, but only if there isnt a 3"
     Code: beepBoop(2455421)
-    Expected Output: "Boop"
+    Expected Output: "Boop!"
+
+    Test: "It will output "Beep" as long as there is a 1 in the number, but only if there isnt a 1 or 3"
+    Code: beepBoop(1455411)
+    Expected Output: "Beep!"
   ```
 
 ## Known Bugs
