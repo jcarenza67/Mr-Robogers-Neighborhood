@@ -20,16 +20,19 @@ body {
 }
 
 .result {
-  background-color: alceblue;
   text-align: center;
+  height: auto;
+  padding: 0%;
+  background: rgba(255,255,255,.3);
 }
 
-#beMine {
+.beMine {
   text-align: center;
+  height: auto;
   font-family: 'Delicious Handrawn', cursive;
   font-size: 70px;
-  color: rgb(190, 160, 7);
-  background-color: aliceblue;
+  color: rgb(16, 14, 3);
+  background: rgba(255,255,255,.3);
 }
 
 .result {
