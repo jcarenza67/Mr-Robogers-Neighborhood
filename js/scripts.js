@@ -1,13 +1,15 @@
 function beepBoop(num) {
-  if (num % 3 === 0 && num !== 0) {
-    return "Won't you be my neighbor?";
+  let strNum = num.toString();
+  let result = "";
+
+  if (strNum.includes("3")) {
+    result = "Won't you be my neighbor?";
   } else {
-    return num;
+    result = strNum;
   }
+
+  return result;
 }
-
-
-
 
 
 
@@ -20,7 +22,7 @@ window.addEventListener("load", function() {
     event.preventDefault();
 
     const inputString = inputField.value;
-    const result = beepBoop(parseInt(inputString));
+    const result = beepBoop(inputString);
 
     resultDiv.textContent = result;
   });
