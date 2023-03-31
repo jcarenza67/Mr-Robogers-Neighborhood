@@ -19,15 +19,17 @@ body {
   padding-top: 140px;
 }
 
-.result, #beMine{
+.result {
   background-color: alceblue;
   text-align: center;
 }
 
 #beMine {
+  text-align: center;
   font-family: 'Delicious Handrawn', cursive;
   font-size: 70px;
-  color: rgb(255, 230, 0);
+  color: rgb(190, 160, 7);
+  background-color: aliceblue;
 }
 
 .result {
