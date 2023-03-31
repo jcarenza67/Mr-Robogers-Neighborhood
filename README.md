@@ -29,11 +29,11 @@ _A web application that takes a number from the user and returns a list of value
   ```
   _Describe: beepBoop()_
 
-  Test: "It should return an array of numbers from 0 to the user's inputted number"
+    Test: "It should return an array of numbers from 0 to the user's inputted number"
     Code: beepBoop(5)
     Expected Output: [0, 1, 2, 3, 4, 5]
   
-  Test: "It should replace the number 1 with "Beep!""
+    Test: "It should replace the number 1 with "Beep!""
     Code: beepBoop(11)
     Expected Output: [0, "Beep!", 2, 3, 4, 5, 6, 7, 8, 9, 10, "Beep!"]
   
@@ -45,11 +45,15 @@ _A web application that takes a number from the user and returns a list of value
     Code: beepBoop(13)
     Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep", "Boop!", "Won't you be my neighbor?"]
 
-    _Describe: beepBoop()
+  _Describe: beepBoop()_
 
     Test: "It will output "Won't you be my neighbor?" as long as there is a 3 in the number"
     Code: beepBoop(3454321)
     Expected Output: "Wont you be my neighbor?"
+
+    Test: "It will output "Boop" as long as there is a 2 in the number, but only if there isnt a 3"
+    Code: beepBoop(2455421)
+    Expected Output: "Boop"
   ```
 
 ## Known Bugs
