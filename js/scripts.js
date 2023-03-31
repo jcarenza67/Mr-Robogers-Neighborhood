@@ -15,5 +15,20 @@ function beepBoop(num) {
       count.push(i);
     }
   }
-  return count;
+  return count.join("");
 }
+
+window.addEventListener("load", function() {
+  const submitBtn = document.getElementById("submit");
+  const inputField = document.getElementById("input");
+  const resultDiv = document.getElementById("beMine");
+
+  submitBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    const inputString = inputField.value;
+    const result = beepBoop(inputString);
+
+    resultDiv.textContent = result;
+  });
+});
