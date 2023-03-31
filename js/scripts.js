@@ -1,7 +1,12 @@
 function beepBoop(num) {
   const count = [];
   for (let i = 0; i <= num; i++) {
-    count.push(i);
+    let neighbor = i.toString();
+    if(neighbor.includes("1")) {
+      count.push("Beep!")
+    } else {
+      count.push(i);
+    }
   }
   return count;
 }
