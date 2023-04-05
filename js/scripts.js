@@ -19,6 +19,7 @@ function beepBoopLoop(num) {
 
 
 
+
 window.addEventListener("load", function() {
   const submitBtn = document.getElementById("submit");
   const inputField = document.getElementById("input");
