@@ -20,10 +20,9 @@ _A web application that takes a number from the user and returns a list of value
 ## Setup/Installation Requirements
 
 * _Click the link provided above_
-* _Navigate to the right side of the page_
-* _Locate "github_pages"_
-* _Click link and it will take you to another page_
-* _Finally, click "View deployment" to view in webpage_
+* _Click the green dropdown button that says "Code"_
+* _Copy the repository HTTPS, clone it to your Desktop directory by typing ***git clone***, paste the copied URL right after **clone**, and then press enter_
+* _Open the **index.html** in your browser_
 
 ## Tests
   ```
