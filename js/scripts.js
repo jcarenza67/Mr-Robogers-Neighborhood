@@ -1,22 +1,22 @@
-function beepBoopLoop(num) {
-  let results = [];
-  for (let i = 0; i < num.length; i++) {
-    let neighbor = num[i].toString();
-    let result = "";
-    if (neighbor.includes("3")) {
-      result = "Won't you be my neighbor?";
-    } else if (neighbor.includes("2")) {
-      result = "Boop!";
-    } else if (neighbor.includes("1")) {
-      result = "Beep!";
-    } else {
-      result = neighbor;
+function beepBoop(num) {
+  const count = [];
+  for (let i = 0; i <= num; i++) {
+    let neighbor = i.toString();
+    if(neighbor.includes("3")) {
+      count.push("Won't you be my neighbor?")
+    } 
+    else if(neighbor.includes("2")) {
+      count.push("Boop!")
     }
-    results.push(result);
+    else if(neighbor.includes("1")) {
+      count.push("Beep!")
+    }
+    else {
+      count.push(i);
+    }
   }
-  return results;
-}
-
+  return count.join(",");
+} 
 
 
 
@@ -29,10 +29,8 @@ window.addEventListener("load", function() {
     event.preventDefault();
 
     const inputString = inputField.value;
-    const inputArray = inputString.split(',').map(Number); 
-    const resultsArray = beepBoopLoop(inputArray);
-    const resultString = resultsArray.join(', '); 
+    const result = beepBoop(inputString);
 
-    resultDiv.textContent = resultString;
+    resultDiv.textContent = result;
   });
 });

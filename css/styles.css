@@ -1,5 +1,5 @@
 body {
-  background-image: url("images/mr-rogers.jpeg");
+  background-image: url("../images/mr-rogers.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
@@ -29,7 +29,7 @@ body {
   text-align: center;
   height: auto;
   font-family: 'Delicious Handrawn', cursive;
-  font-size: 70px;
+  font-size: 35px;
   color: rgb(16, 14, 3);
   background: rgba(255,255,255,.3);
 }
